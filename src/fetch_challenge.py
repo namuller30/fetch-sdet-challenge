@@ -79,9 +79,9 @@ def wait_for_weight_list_increase(starting_weighing_len, timeout=15):
 
 """Print out all the weightings done in this run"""
 def output_weighing_attempts():
-    guesses = CHALLENGE_PAGE.get_weighings()
-    print(f"The following {len(guesses)} guesses were made:")
-    for weighing in guesses:
+    weighings = CHALLENGE_PAGE.get_weighings()
+    print(f"The following {len(weighings)} weighings were made:")
+    for weighing in weighings:
         print(weighing.text)
 
 
